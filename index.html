@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Fitness - Academia</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="#inicio" class="logo">
+                <img src="logotipo.png" alt="Top Fitness Logo">
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navigation -->
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#personais" class="nav-link">Personais</a></li>
+                    <li><a href="#fale-conosco" class="nav-link">Fale Conosco</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social Icons Header -->
+            <div class="header-socials">
+                <a href="https://wa.me/27996208989" target="_blank" class="social-icon header-icon"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon header-icon"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO 1: INÍCIO (HERO) -->
+        <section id="inicio" class="hero">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <!-- Slides -->
+                    <div class="carousel-item hero-slide-1 active"></div>
+                    <div class="carousel-item hero-slide-2"></div>
+                    <div class="carousel-item hero-slide-3"></div>
+                    <div class="carousel-item hero-slide-4"></div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control prev" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-control next" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <!-- Scroll Down Indicator -->
+            <a href="#quem-somos" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- SEÇÃO 2: QUEM SOMOS -->
+        <section id="quem-somos" class="about">
+            <div class="container about-container">
+                <div class="about-video">
+                    <video id="about-video" controls muted playsinline poster="imagens/hero-1.jpg">
+                        <!-- Fallback poster -->
+                        <source src="imagens/video-institucional.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Conheça a <span class="highlight">Top Fitness</span></h2>
+                    <p>Desde ????? no segmento de musculção, a Top Fitness é uma das maiores academias de Montanha,
+                        tanto
+                        em estrutura como em número de alunos.</p>
+                    <p>Oferecemos um mix de treino completo para todas as idades.</p>
+                    <p>Temos planos mensais, semestrais e anuais. Também temos planos especiais para empresas.</p>
+                    <a href="#fale-conosco" class="btn btn-primary">Entre em contato</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: POR QUE ESCOLHER (FEATURES) -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title centered">Por que escolher a <span class="highlight">Top Fitness?</span></h2>
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Equipamentos de Alto Padrão</h3>
+                        <p>Na Top Fitness oferecemos o que há de melhor e mais moderno para nossos alunos.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Área de Musculação</h3>
+                        <p>Temos uma ampla área de musculação, totalmente equipada e pronta para receber você, sua
+                            família e seus amigos.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Personais Trainers Qualificados</h3>
+                        <p>Temos instrutores para te orientar nos treinos e personais formados à sua disposição.</p>
+                        <small class="note">(Personais cobram valores extras da academia)</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SEÇÃO 4: PROMOCIONAL -->
+        <section class="promo">
+            <div class="container promo-container">
+                <div class="promo-image">
+                    <img src="imagens/dias-gratis.jpg" alt="7 Dias Grátis">
+                </div>
+                <div class="promo-content">
+                    <h2>Que tal experimentar a <span class="highlight">Top Fitness</span> por 7 dias?</h2>
+                    <h3>Totalmente grátis!</h3>
+                    <a href="#fale-conosco" class="btn btn-primary">Quero começar agora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: GALERIA -->
+        <section id="galeria" class="gallery">
+            <div class="container">
+                <h2 class="section-title centered">Nossa Galeria</h2>
+                <div class="gallery-grid">
+                    <!-- Real images from galeria folder -->
+                    <div class="gallery-item"><img src="imagens/galeria/1.jpg" alt="Galeria 1"></div>
+                    <div class="gallery-item"><img src="imagens/galeria/2.webp" alt="Galeria 2"></div>
+                    <div class="gallery-item"><img src="imagens/galeria/3.webp" alt="Galeria 3"></div>
+                    <div class="gallery-item"><img src="imagens/galeria/4.png" alt="Galeria 4"></div>
+                    <!-- Duplicating to keep grid full if desired, or just these 4 -->
+                    <div class="gallery-item"><img src="imagens/galeria/1.jpg" alt="Galeria 5"></div>
+                    <div class="gallery-item"><img src="imagens/galeria/2.webp" alt="Galeria 6"></div>
+                </div>
+            </div>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <span class="close-lightbox">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+                <a class="lightbox-prev">&#10094;</a>
+                <a class="lightbox-next">&#10095;</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 6: PERSONAIS -->
+        <section id="personais" class="trainers">
+            <div class="container">
+                <h2 class="section-title centered">Nossos Personais</h2>
+                <div class="trainers-grid">
+                    <!-- 8 Placeholders -->
+                    <div class="trainer-card" data-name="Personal 1"
+                        data-info="Especialista em Hipertrofia. CREF: 123456-G/ES">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <h3>Personal 1</h3>
+                    </div>
+                    <div class="trainer-card" data-name="Personal 2"
+                        data-info="Especialista em Emagrecimento. CREF: 123456-G/ES">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <h3>Personal 2</h3>
+                    </div>
+                    <div class="trainer-card" data-name="Personal 3"
+                        data-info="Treinamento Funcional. CREF: 123456-G/ES">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <h3>Personal 3</h3>
+                    </div>
+                    <div class="trainer-card" data-name="Personal 4" data-info="Cross Training. CREF: 123456-G/ES">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <h3>Personal 4</h3>
+                    </div>
+                    <div class="trainer-card" data-name="Personal 5" data-info="Reabilitação. CREF: 123456-G/ES">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <h3>Personal 5</h3>
+                    </div>
+                    <div class="trainer-card" data-name="Personal 6" data-info="Fisiculturismo. CREF: 123456-G/ES">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <h3>Personal 6</h3>
+                    </div>
+                    <div class="trainer-card" data-name="Personal 7" data-info="Dança e Ritmos. CREF: 123456-G/ES">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <h3>Personal 7</h3>
+                    </div>
+                    <div class="trainer-card" data-name="Personal 8" data-info="Pilates. CREF: 123456-G/ES">
+                        <div class="trainer-placeholder"><i class="fas fa-user"></i></div>
+                        <h3>Personal 8</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trainer Modal -->
+            <div id="trainer-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="modal-body">
+                        <div class="modal-img-container">
+                            <!-- Placeholder image for trainer in modal -->
+                            <i class="fas fa-user" style="font-size: 5rem; color: #ccc;"></i>
+                        </div>
+                        <div class="modal-info">
+                            <h2 id="modal-trainer-name">Nome do Personal</h2>
+                            <p id="modal-trainer-desc">Descrição do personal aqui.</p>
+                            <a href="https://wa.me/27996208989" class="btn btn-primary" target="_blank">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 7: FALE CONOSCO -->
+        <section id="fale-conosco" class="contact">
+            <div class="container contact-container">
+                <div class="contact-map">
+                    <!-- Google Maps Embed -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.8566022159516!2d-40.37173632481786!3d-18.124412082894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb50c45de2d828b%3A0xb47eb6598cacd756!2sAcademia%20Top%20Fitness!5e0!3m2!1spt-BR!2sbr!4v1771537442041!5m2!1spt-BR!2sbr"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-form">
+                    <h3>Fale com a <span class="highlight">Top Fitness</span></h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="celular">Celular</label>
+                            <input type="tel" id="celular" name="celular" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-socials">
+                    <a href="https://wa.me/27996208989" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:contato@topfitness.com"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="footer-copy">
+                    <a href="https://wa.me/27996208989" target="_blank" style="text-decoration: none; color: inherit;">
+                        <p>Desenvolvimento: Clevis Côrtes</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="script.js"></script>
+</body>
+
+</html>
